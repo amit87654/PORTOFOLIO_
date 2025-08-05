@@ -29,7 +29,7 @@ const Skill = () => {
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.shadowMap.enabled = true;
 
-    scene.add(new THREE.AmbientLight(0xffffff, 1.5));
+    scene.add(new THREE.AmbientLight(0x000000, 1.5));
 
     const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
     directionalLight.position.set(5, 5, 5);
@@ -39,13 +39,13 @@ const Skill = () => {
     const loader = new THREE.TextureLoader();
 
     // Textures
-    const textureLeft = loader.load("src/assets/text.webp", (tex) => {
+    const textureLeft = loader.load("dist/public/textures/profile.png", (tex) => {
       tex.wrapS = THREE.RepeatWrapping;
       tex.wrapT = THREE.RepeatWrapping;
       tex.repeat.set(1, 1);
     });
 
-    const textureRight = loader.load("src/assets/identity.png", (tex) => {
+    const textureRight = loader.load("dist/public/textures/about.png", (tex) => {
       tex.wrapS = THREE.RepeatWrapping;
       tex.wrapT = THREE.RepeatWrapping;
       tex.repeat.set(1, 1);
