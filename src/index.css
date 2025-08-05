@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+  scroll-behavior: smooth;
+  font-family: poppins;
+}
+
+/* Base styles for mobile devices */
+body {
+  font-size: 16px;
+  
+}
+
+/* Styles for screens wider than 768px (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+ 
+ 
+}
+
+
+/* Flickering neon text */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0;
+  }
+}
+
+
+
+.titan{
+  letter-spacing: 10px;
+  color: white;
+  perspective: 300px;
+}
+.neon-text {
+  color: #00ff99;
+  text-shadow: 
+    0 0 5px #00ff99, 
+    0 0 10px #00ff99, 
+    0 0 15px #00ff99, 
+    0 0 20px #00ff99, 
+    0 0 25px #00ff99, 
+    0 0 30px #00ff99, 
+    0 0 35px #00ff99;
+}
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.skill{
+  background-color: rgb(22, 22, 22);
+  background-image: url(assets/bg.png);
+  background-size: cover;
+}
+.about{
+  background-color: rgb(22, 22, 22);
+  background-image: url(assets/bg.png);
+  background-size: cover;
+
+}
+.project-bg{
+  background: linear-gradient(to right,black, rgb(22, 22, 22));
+}
+.bg-color{
+  background: linear-gradient(to left, rgb(22, 22, 22),black,rgb(3, 79, 79));
+        
+
+}
+.slow-animation{
+  animation-duration: 10s;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.spline-wrapper iframe {
+  cursor: none !important;
+  pointer-events: auto;
+}
+
+
+/* styles.css */
