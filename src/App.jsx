@@ -16,7 +16,7 @@ const App = () => {
     const timer1 = setTimeout(() => {
       setLoading(false);
       setShowMainContent(true);
-    }, 11000);
+    }, 3000);
 
     return () => clearTimeout(timer1);
   }, []);
