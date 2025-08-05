@@ -36,7 +36,7 @@ const App = () => {
               fontFamily: "poppins"
             }}
           >FRON
-            <span style={{ fontSize: "500px"}}  >T</span>END
+            <span style={{ fontSize: "400px"}}  >T</span>END
           </h1>
         </div>
       ) : (

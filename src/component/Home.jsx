@@ -16,7 +16,7 @@ const Home = () => {
             letterSpacing: '6px',
             lineHeight: 1.2,
             textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
-            letterSpacing: '3.4rem',
+            letterSpacing: '3rem',
             fontFamily: 'Poppins, sans-serif',
             fontWeight: 'bold',
             color: 'transparent',
