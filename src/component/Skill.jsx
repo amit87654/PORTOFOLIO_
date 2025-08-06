@@ -6,6 +6,7 @@ import * as THREE from "three";
 import { RoundedBoxGeometry } from "three-stdlib";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
+
 const Skill = () => {
   const canvasRef = useRef();
   const containerRef = useRef();
@@ -45,13 +46,13 @@ const Skill = () => {
     // TEXTURE LOADER
     const loader = new THREE.TextureLoader();
     const imagePaths = [
-      "dist/public/textures/html.png",
-      "dist/public/textures/css.png",
-      "dist/public/textures/js.png",
-      "dist/public/textures/tailwind.png",
-      "dist/public/textures/bootsrap.png",
-      "dist/public/textures/react.png",
-      "dist/public/textures/three.png",
+      "/dist/public/textures/html.png",
+      "/dist/public/textures/css.png",
+      "/dist/public/textures/js.png",
+      "/dist/public/textures/tailwind.png",
+      "/dist/public/textures/bootsrap.png",
+      "/dist/public/textures/react.png",
+      "/dist/public/textures/three.png",
     ];
 
 
