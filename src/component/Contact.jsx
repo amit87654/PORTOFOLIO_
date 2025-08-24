@@ -92,7 +92,7 @@ const Contact = () => {
   return (
     <section id="contact" className=" bg-no-repeat bg-cover bg-center relative w-full min-h-[100vh] bg-black overflow-hidden flex items-center justify-center px-4 sm:px-8"
     style={{
-      backgroundImage:'url(src/assets/.png)'
+      backgroundImage:'url(public/assets/gradient.png)'
     }}
     
     >

@@ -115,7 +115,7 @@ const Skill = () => {
       ref={containerRef}
       className="relative w-full h-screen bg-black overflow-hidden "
       style={{
-        backgroundImage:"url(src/assets/bg.webp)"
+        backgroundImage:"url()"
       }}
     >
       <canvas ref={canvasRef} className="w-full h-full" />

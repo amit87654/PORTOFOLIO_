@@ -36,23 +36,23 @@ const Skill = () => {
     renderer.shadowMap.enabled = true;
 
     // LIGHTING
-    scene.add(new THREE.AmbientLight(0x000000, 0.9));
+scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1.2);
+directionalLight.position.set(5, 5, 5);
+scene.add(directionalLight);
 
-    const directionalLight = new THREE.DirectionalLight(0x111111, 500);
-    directionalLight.position.set(5, 5, 5);
-    directionalLight.castShadow = true;
-    scene.add(directionalLight);
+  
 
     // TEXTURE LOADER
     const loader = new THREE.TextureLoader();
     const imagePaths = [
-      "/public/assets/html.png",
-      "/public/assets/css.png",
-      "/public/assets/js.png",
-      "/public/assets/react.png",
-      "/public/assets/bootstrap.png",
-      "/public/assets/react.png",
-      "/public/assets/tailwind.png",
+      "/assets/html.png",
+      "/assets/css.png",
+      "/assets/js.png",
+      "/assets/react.png",
+      "/assets/bootstrap.png",
+      "/assets/react.png",
+      "/assets/tailwind.png"
     ];
 
 
@@ -68,6 +68,9 @@ scene.add(mesh);
       const angle = (i / 7) * Math.PI * 2;
       const texture = loader.load(imagePaths[i]);
       texture.minFilter = THREE.LinearFilter;
+      texture.minFilter = THREE.LinearMipMapLinearFilter;
+texture.magFilter = THREE.LinearFilter;
+
 
       const cardMaterial = new THREE.MeshStandardMaterial({
         map: texture,
@@ -99,6 +102,8 @@ scene.add(mesh);
     controls.enableZoom = false;
     controls.maxPolarAngle = Math.PI / 2;
     controls.minPolarAngle = Math.PI / 2;
+    controls.autoRotateSpeed = 2;
+
 
     // ANIMATION LOOP
     const animate = () => {
@@ -129,7 +134,7 @@ scene.add(mesh);
 <section
   id="skill"
   ref={containerRef}
-  className="skill relative w-full h-screen bg-black overflow-hidden bg-[url('src/assets/bg.png')] bg-cover bg-center"
+  className="skill relative w-full h-screen bg-black overflow-hidden bg-[url('/bg.png')] bg-cover bg-center"
 >
   <canvas ref={canvasRef} className="w-full h-full" />
 <div className="absolute top-5 left-5 z-10 text-center">

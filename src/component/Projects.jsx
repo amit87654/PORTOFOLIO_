@@ -38,7 +38,7 @@ const Project = () => {
   return (
     <div className="fade-in w-full h-screen bg-black flex flex-col items-center justify-center relative  "
     style={{
-      backgroundImage:'url(dist/public/textures/light.png)'
+      backgroundImage:'url("public/assets/gradient.png")'
     }}>
       {/* HEADER TEXT AT TOP */}
       <div className="absolute top-10 z-20 text-center px-4">
