@@ -46,13 +46,13 @@ const Skill = () => {
     // TEXTURE LOADER
     const loader = new THREE.TextureLoader();
     const imagePaths = [
-      "/dist/public/textures/html.png",
-      "/dist/public/textures/css.png",
-      "/dist/public/textures/js.png",
-      "/dist/public/textures/tailwind.png",
-      "/dist/public/textures/bootsrap.png",
-      "/dist/public/textures/react.png",
-      "/dist/public/textures/three.png",
+      "/public/assets/html.png",
+      "/public/assets/css.png",
+      "/public/assets/js.png",
+      "/public/assets/react.png",
+      "/public/assets/bootstrap.png",
+      "/public/assets/react.png",
+      "/public/assets/tailwind.png",
     ];
 
 

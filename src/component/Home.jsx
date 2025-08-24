@@ -4,7 +4,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div className="h-screen w-full bg-black relative overflow-hidden flex cursor-none">
-
+      
       {/* ✅ LEFT SIDE TEXT WITH BACKDROP */}
       <div className="w-[20%] h-full z-10 flex items-center justify-center p-4 
                       bg-black/30 backdrop-blur-md absolute top-0 left-0">

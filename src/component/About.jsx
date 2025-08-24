@@ -39,13 +39,13 @@ const Skill = () => {
     const loader = new THREE.TextureLoader();
 
     // Textures
-    const textureLeft = loader.load("dist/public/textures/profile.png", (tex) => {
+    const textureLeft = loader.load("/assets/profile.png", (tex) => {
       tex.wrapS = THREE.RepeatWrapping;
       tex.wrapT = THREE.RepeatWrapping;
       tex.repeat.set(1, 1);
     });
 
-    const textureRight = loader.load("dist/public/textures/about.png", (tex) => {
+    const textureRight = loader.load("/assets/text.png", (tex) => {
       tex.wrapS = THREE.RepeatWrapping;
       tex.wrapT = THREE.RepeatWrapping;
       tex.repeat.set(1, 1);
