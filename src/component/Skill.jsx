@@ -51,7 +51,7 @@ scene.add(directionalLight);
       "/assets/js.png",
       "/assets/react.png",
       "/assets/bootstrap.png",
-      "/assets/react.png",
+      "/assets/three.png",
       "/assets/tailwind.png"
     ];
 
