@@ -22,23 +22,40 @@ const App = () => {
   }, []);
 
   return (
-    <div className="scroll-smooth transition-all duration-4000 ease-out fade-in">
-      {loading ? (
-        <div className="h-screen w-full bg-black flex items-center justify-center">
-          <h1
-            className=" text-5xl md:text-7xl text-[#00ffff] font-bold animate-pulse neon-glow titan"
-            style={{
-              color: "transparent",
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              backgroundImage:
-                "linear-gradient(to top,black,black,white,black,white,white,white,white)",
-              fontFamily: "poppins"
-            }}
-          >FRON
-            <span style={{ fontSize: "400px"}}  >T</span>END
-          </h1>
-        </div>
+  <div className="scroll-smooth transition-all duration-4000 ease-out fade-in">
+  {loading ? (
+    <div className="h-screen w-full bg-black flex items-center justify-center">
+      <h1
+        className="font-bold animate-pulse neon-glow titan flex items-center"
+        style={{
+          color: "transparent",
+          backgroundClip: "text",
+          WebkitBackgroundClip: "text",
+          backgroundImage:
+            "linear-gradient(to top,black,black,white,black,white,white,white,white)",
+          fontFamily: "poppins",
+        }}
+      >
+        {/* FRON */}
+        <span className="text-2xl sm:text-4xl md:text-5xl lg:text-10xl">
+          FRON
+        </span>
+
+        {/* T */}
+        <span className="text-[100px] sm:text-[200px] md:text-[300px] lg:text-[400px]">
+          T
+        </span>
+
+        {/* END */}
+        <span className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl">
+          END
+        </span>
+      </h1>
+    </div>
+  
+
+  
+
       ) : (
         <div
           className={`transition-all duration-1000 ease-out transform ${
